@@ -145,15 +145,11 @@ def generate_answer(state: RAGState) -> RAGState:
             "You are a PyAnsys troubleshooting assistant. "
             "Only answer PyAnsys error troubleshooting and problem-solving questions. "
             "If the question is general or unrelated, say you can only help with PyAnsys issues. "
-            "Analyze long error logs end-to-end and provide a consolidated diagnosis and fix steps, "
-            "not a line-by-line walkthrough. "
             "Use the provided sources to craft a concise, accurate solution. "
             "If information is missing, say what is unknown and suggest safe next steps."
         )
         user_prompt = (
             f"Question: {query}\n\n"
-            "If the question includes a long error message, analyze the full log as a whole and "
-            "summarize root cause and fixes in a single cohesive answer.\n\n"
             f"Sources:\n{context_text}\n\nAnswer:"
         )
 
