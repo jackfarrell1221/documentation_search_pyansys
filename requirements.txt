@@ -1,0 +1,8 @@
+langgraph
+langchain-core
+ddgs
+trafilatura
+requests
+urllib3
+ollama
+lxml
